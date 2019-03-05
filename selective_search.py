@@ -55,6 +55,10 @@ def selective_search_bbox(image):
             logging.debug('Discarding h/w {} - x:{} y:{} w:{} h:{}'.format(h/w, x, y, w, h))
             continue
 
+        #HSN
+        if w == 0 or h == 0 :
+            logging.debug('Discarding h or w is zero - x:{} y:{} w:{} h:{}'.format(x, y, w, h))
+            continue
 
         candidates.add(r['rect'])
 

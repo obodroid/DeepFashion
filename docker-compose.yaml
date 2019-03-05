@@ -1,0 +1,18 @@
+version: '2.3'
+services:
+  deep-fashion:
+    build: ./
+    tty: true
+    runtime: nvidia
+    ports:
+      - "3000-3010:3000-3010"
+    volumes:
+      - ./:/src:cached
+      - /mnt/nas/DeepFashion/bottleneck:/src/bottleneck:cached
+      - /mnt/nas/DeepFashion/dataset:/src/dataset:cached
+      - /tmp/.X11-unix/:/tmp/.X11-unix
+    container_name: deep-fashion
+    network_mode: "bridge"
+    environment:
+      - DISPLAY
+      - QT_X11_NO_MITSHM=1

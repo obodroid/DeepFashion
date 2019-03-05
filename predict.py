@@ -28,6 +28,8 @@ def init():
     global class_names
     # TODO: Remove hardcoding if dataset available
     class_names = ['Anorak', 'Bomber', 'Button-Down', 'Capris', 'Chinos', 'Coat', 'Flannel', 'Hoodie', 'Jeans', 'Jeggings', 'Jersey', 'Kaftan', 'Parka', 'Peacoat', 'Poncho', 'Robe', 'Sweatshorts', 'Trunks', 'Turtleneck']
+    # class_names = ['Coat', 'Kaftan', 'Robe']
+    # class_names = ['Anorak', 'Blazer', 'Blouse', 'Bomber', 'Button-Down', 'Cardigan', 'Flannel', 'Halter', 'Henley', 'Hoodie', 'Jacket', 'Jersey', 'Parka', 'Peacoat', 'Poncho', 'Sweater', 'Tank', 'Tee', 'Top', 'Turtleneck', 'Capris', 'Chinos', 'Culottes', 'Cutoffs', 'Gauchos', 'Jeans', 'Jeggings', 'Jodhpurs', 'Joggers', 'Leggings', 'Sarong', 'Shorts', 'Skirt', 'Sweatpants', 'Sweatshorts', 'Trunks', 'Caftan', 'Cape', 'Coat', 'Coverup', 'Dress', 'Jumpsuit', 'Kaftan', 'Kimono', 'Nightdress', 'Onesie', 'Robe', 'Romper', 'Shirtdress', 'Sundress']
     #class_names = get_subdir_list(dataset_train_path)
     logging.debug('class_names {}'.format(class_names))
 

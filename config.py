@@ -49,13 +49,14 @@ dataset_train_path=os.path.join(dataset_path, 'train')
 dataset_val_path=os.path.join(dataset_path, 'validation')
 dataset_test_path=os.path.join(dataset_path, 'test')
 #dataset_src_path='fashion_data'
-fashion_dataset_path='../Deep_Learning/DeepFashionV2/fashion_data/'
+fashion_dataset_path='fashion_data'
 dataset_train_info=os.path.join(dataset_train_path, 'train_info.txt')
 dataset_val_info=os.path.join(dataset_val_path, 'val_info.txt')
 
 top_model_weights_path_save = 'output/bottleneck_fc_model.h5'
 #top_model_weights_path_load = 'output/bottleneck_fc_model.h5'
 top_model_weights_path_load = 'output/best-weights-011-1.3547.hdf5'
+# top_model_weights_path_load = 'output/best-weights-011-1.3547.hdf5'
 
 btl_path = 'bottleneck/'
 btl_train_path = 'bottleneck/train/'

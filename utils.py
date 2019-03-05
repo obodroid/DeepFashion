@@ -106,7 +106,7 @@ def display_bbox_text(img, bbox, text):
     # font = ImageFont.truetype('fonts/alterebro-pixel-font.ttf', 30)
     #font = ImageFont.truetype('/usr/share/fonts/truetype/ubuntu-font-family/Ubuntu-C.ttf', 16)
     #font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 16)
-    font = ImageFont.truetype('font/Ubuntu-C.ttf', 16)
+    font = ImageFont.truetype('fonts/Ubuntu-C.ttf', 16)
 
     # draw.text((x, y),"Sample Text",(r,g,b))
     #draw.text((bbox[0], bbox[1]), text,(0,0,0),font=font)

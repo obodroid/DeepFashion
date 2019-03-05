@@ -1,4 +1,9 @@
+.vscode/*
+logs/*
+bottleneck/*
 bottleneck/train/*
 bottleneck/validation/*
 output/best-weights*
 dataset_prediction/crops/*
+fashion_data/*
+tensorflow121_py27_gpu/bin/*
