@@ -35,7 +35,7 @@ def init():
 
 
 def get_images():
-    images_path_name = sorted(glob.glob(prediction_dataset_path + '/*.jpg'))
+    images_path_name = sorted(glob.glob(prediction_dataset_path + '/BNK48.jpg'))
     # logging.debug('images_path_name {}'.format(images_path_name))
 
     return images_path_name
@@ -116,9 +116,6 @@ def predict_model(images, images_names=None):
 
     # logging.debug('images_name_list {}'.format(images_name_list))
 
-
-
-
     bboxes = []
     for image_path_name in images_name_list:
         bbox_=image_path_name.split('/')[-1].split('.jpg')[0].split('-')[1]
@@ -137,7 +134,7 @@ def predict_model(images, images_names=None):
 
     #orig_image_path_name = ['dataset_prediction/images/img_00000061.jpg']
     #orig_image_path_name = ['dataset_prediction/images2/shahida-parides-floral-v-neckline-long-kaftan-dress.jpg']
-    orig_image_path_name = sorted(glob.glob('dataset_prediction/images' + '/*.jpg'))
+    orig_image_path_name = sorted(glob.glob('dataset_prediction/images' + '/BNK48.jpg'))
     logging.debug('orig_image_path_name {}'.format(orig_image_path_name))
     display_bbox(orig_image_path_name, bboxes, prediction_class_name, prediction_class_prob, prediction_iou, images_name_list)
 

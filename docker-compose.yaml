@@ -5,6 +5,7 @@ services:
     tty: true
     runtime: nvidia
     ports:
+      - "8888:8888"
       - "3000-3010:3000-3010"
     volumes:
       - ./:/src:cached
