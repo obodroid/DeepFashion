@@ -77,10 +77,10 @@ batch_size_predict = 32
 
 predictions_class_weight=0.5
 predictions_iou_weight=0.5
-# prediction_class_prob_threshold = 0.80
-# prediction_iou_threshold = 0.70
-prediction_class_prob_threshold = 0.50
-prediction_iou_threshold = 0.50
+prediction_class_prob_threshold = 0.80
+prediction_iou_threshold = 0.70
+# prediction_class_prob_threshold = 0.50
+# prediction_iou_threshold = 0.50
 
 
 early_stopping_patience=500
