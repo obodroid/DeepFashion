@@ -3,14 +3,14 @@ services:
   deep-fashion:
     build: ./
     tty: true
-    runtime: nvidia
+    # runtime: nvidia
     ports:
       - "8888:8888"
       - "3000-3010:3000-3010"
     volumes:
       - ./:/src:cached
-      - /mnt/nas/DeepFashion/bottleneck:/src/bottleneck:cached
-      - /mnt/nas/DeepFashion/dataset:/src/dataset:cached
+      # - /mnt/nas/DeepFashion/bottleneck:/src/bottleneck:cached
+      # - /mnt/nas/DeepFashion/dataset:/src/dataset:cached
       - /tmp/.X11-unix/:/tmp/.X11-unix
     container_name: deep-fashion
     network_mode: "bridge"
